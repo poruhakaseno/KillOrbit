@@ -1,0 +1,122 @@
+<div *ngIf="isPTNCreated" class="em-c-alert em-c-alert--success" role="alert">
+    <svg class="em-c-icon em-c-icon--small em-c-alert__icon">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../images/em-icons.svg#info"></use>
+    </svg>
+    <div class="em-c-alert__body">
+        PTN {{ptnNumber}} has been successfully created. You will shortly be routed to its detail page.
+    </div>
+    <div class="em-c-alert__actions">
+        <button class="em-c-text-btn ">
+        Close
+        </button>
+        <!-- end em-c-btn -->
+    </div>
+</div>
+      <!-- end em-c-alert -->
+
+<main role="main">
+        <div class="em-l-container">
+            <div class="em-c-page-header ">
+                <h1 class="em-c-page-header__title">
+                    <!-- 'fpo' stands for 'for placement only'. 'fpo-block' should be ignored-->
+                    <div class="em-u-text-align-center fpo-block">
+
+                    </div>
+                </h1>
+            </div>
+            <!-- content -->
+
+        </div>
+        <!-- end em-l-container-->
+
+
+        <div class="em-c-page-header ">
+                <h1 class="em-c-page-header__title">Create PTN</h1>
+            </div>
+
+            <div class="em-c-toolbar ">
+                <div class="em-c-toolbar__item em-c-toolbar__item--stretch">
+                    <div class="em-c-field em-c-field--inline em-c-field--small">
+                        <label for="" class="em-c-field__label">PTN number</label>
+                        <div class="em-c-field__body em-c-field__body--stretch">
+                        <input type="" id=""  [(ngModel)]="ptnNumber" class="em-c-input" placeholder="PTN#"  >
+                        </div>
+                        <!-- end em-c-field__body -->
+                    </div>
+                    <!-- end em-c-field -->
+                </div>
+                <!-- end em-c-toolbar__item -->
+            </div>
+            <!-- end em-c-toolbar -->
+
+            <div class="em-c-toolbar ">
+                <div class="em-c-toolbar__item em-c-toolbar__item--stretch">
+                    <div class="em-c-field em-c-field--inline em-c-field--small">
+                        <label for="" class="em-c-field__label">PO number</label>
+                        <div class="em-c-field__body em-c-field__body--stretch">
+                            <input type="" id="" [(ngModel)]="po" class="em-c-input" placeholder="PO#" >
+                        </div>
+                        <!-- end em-c-field__body -->
+                    </div>
+                    <!-- end em-c-field -->
+                </div>
+                <!-- end em-c-toolbar__item -->
+            </div>
+            <!-- end em-c-toolbar -->
+
+            <div class="em-c-toolbar ">
+                <div class="em-c-toolbar__item em-c-toolbar__item--stretch">
+                    <div class="em-c-field em-c-field--inline em-c-field--small">
+                        <label for="" class="em-c-field__label">Status</label>
+                        <div class="em-c-field__body em-c-field__body--stretch">
+                            <input type="" id="" [(ngModel)]="status" class="em-c-input" placeholder="">
+                        </div>
+                        <!-- end em-c-field__body -->
+                    </div>
+                    <!-- end em-c-field -->
+                </div>
+                <!-- end em-c-toolbar__item -->
+            </div>
+            <!-- end em-c-toolbar -->
+
+            <div class="em-c-toolbar ">
+                <div class="em-c-toolbar__item em-c-toolbar__item--stretch">
+                    <div class="em-c-field em-c-field--inline em-c-field--small">
+                        <label for="" class="em-c-field__label">Supplier</label>
+                        <div class="em-c-field__body em-c-field__body--stretch">
+                            <input type="" id="" [(ngModel)]="supplier" class="em-c-input" placeholder="" >
+                        </div>
+                        <!-- end em-c-field__body -->
+                    </div>
+                    <!-- end em-c-field -->
+                </div>
+                <!-- end em-c-toolbar__item -->
+            </div>
+            <!-- end em-c-toolbar -->
+
+            <div class="em-c-toolbar ">
+                <div class="em-c-toolbar__item em-c-toolbar__item--stretch">
+                    <div class="em-c-field em-c-field--inline em-c-field--small">
+                        <label for="" class="em-c-field__label">Ship To</label>
+                        <div class="em-c-field__body em-c-field__body--stretch"  >
+                            <input type="" id="" [(ngModel)]="shipto" class="em-c-input" placeholder="" >
+                        </div>
+                        <!-- end em-c-field__body -->
+                    </div>
+                    <!-- end em-c-field -->
+                </div>
+                <!-- end em-c-toolbar__item -->
+            </div>
+            <!-- end em-c-toolbar -->
+
+
+            <div class="em-u-text-align-center">&nbsp;</div>
+            <div class="em-u-text-align-right">
+
+                <button type="button" (click)="onCreate()" [ngClass]="{'disabled':isFieldValid(),'em-c-btn':true,'em-c-btn--disabled':isFieldValid()}">
+                    <span class="em-c-btn__text">Create PTN</span>
+                </button>
+                <!-- end em-c-btn -->
+
+            </div>
+</main>

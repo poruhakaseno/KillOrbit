@@ -1,0 +1,123 @@
+<main role="main">
+        <div class="em-l-container">
+            <div class="em-c-page-header ">
+                <h1 class="em-c-page-header__title">
+                    <!-- 'fpo' stands for 'for placement only'. 'fpo-block' should be ignored-->
+                    <div class="em-u-text-align-center fpo-block">
+
+                    </div>
+                </h1>
+            </div>
+            <!-- content -->
+
+        </div>
+        <!-- end em-l-container-->
+
+
+        <div class="em-c-page-header ">
+                <h1 class="em-c-page-header__title">PTN Detail - {{ptnDetail ? ptnDetail.ptnNumber : ""}} </h1>
+            </div>
+
+            <div class="em-c-toolbar ">
+                <div class="em-c-toolbar__item em-c-toolbar__item--stretch">
+                    <div class="em-c-field em-c-field--inline em-c-field--small">
+                        <label for="" class="em-c-field__label">PTN number</label>
+                        <div class="em-c-field__body em-c-field__body--stretch">
+                        <input type="" id="" class="em-c-input" placeholder="PTN#" value={{ptnDetail.ptnNumber}} readonly>
+                        </div>
+                        <!-- end em-c-field__body -->
+                    </div>
+                    <!-- end em-c-field -->
+                </div>
+                <!-- end em-c-toolbar__item -->
+            </div>
+            <!-- end em-c-toolbar -->
+
+            <div class="em-c-toolbar ">
+                <div class="em-c-toolbar__item em-c-toolbar__item--stretch">
+                    <div class="em-c-field em-c-field--inline em-c-field--small">
+                        <label for="" class="em-c-field__label">PO number</label>
+                        <div class="em-c-field__body em-c-field__body--stretch">
+                            <input type="" id="" class="em-c-input" placeholder="PO#" value="{{ptnDetail.poNumber}}" readonly>
+                        </div>
+                        <!-- end em-c-field__body -->
+                    </div>
+                    <!-- end em-c-field -->
+                </div>
+                <!-- end em-c-toolbar__item -->
+            </div>
+            <!-- end em-c-toolbar -->
+
+            <div class="em-c-toolbar ">
+                <div class="em-c-toolbar__item em-c-toolbar__item--stretch">
+                    <div class="em-c-field em-c-field--inline em-c-field--small">
+                        <label for="" class="em-c-field__label">Status</label>
+                        <div class="em-c-field__body em-c-field__body--stretch">
+                            <input type="" id="" class="em-c-input" placeholder="" value="{{ptnDetail.status}}" readonly>
+                        </div>
+                        <!-- end em-c-field__body -->
+                    </div>
+                    <!-- end em-c-field -->
+                </div>
+                <!-- end em-c-toolbar__item -->
+            </div>
+            <!-- end em-c-toolbar -->
+
+            <div class="em-c-toolbar ">
+                <div class="em-c-toolbar__item em-c-toolbar__item--stretch">
+                    <div class="em-c-field em-c-field--inline em-c-field--small">
+                        <label for="" class="em-c-field__label">Supplier</label>
+                        <div class="em-c-field__body em-c-field__body--stretch">
+                            <input type="" id="" class="em-c-input" placeholder="" value="{{ptnDetail.supplier}}" readonly>
+                        </div>
+                        <!-- end em-c-field__body -->
+                    </div>
+                    <!-- end em-c-field -->
+                </div>
+                <!-- end em-c-toolbar__item -->
+            </div>
+            <!-- end em-c-toolbar -->
+
+            <div class="em-c-toolbar ">
+                <div class="em-c-toolbar__item em-c-toolbar__item--stretch">
+                    <div class="em-c-field em-c-field--inline em-c-field--small">
+                        <label for="" class="em-c-field__label">Ship To</label>
+                        <div class="em-c-field__body em-c-field__body--stretch"  >
+                            <input type="" id="" class="em-c-input" placeholder="" value="{{ptnDetail.shipTo}}" readonly>
+                        </div>
+                        <!-- end em-c-field__body -->
+                    </div>
+                    <!-- end em-c-field -->
+                </div>
+                <!-- end em-c-toolbar__item -->
+            </div>
+            <!-- end em-c-toolbar -->
+
+
+            <div class="em-u-text-align-center">&nbsp;</div>
+            <div class="em-u-text-align-right">
+                <!-- <a href="">
+                <button class="em-c-btn ">
+                    <span class="em-c-btn__text">Edit PTN</span>
+                </button>
+                
+                </a> -->
+
+
+                <button type="button" (click)="printPTN()" class="em-c-btn ">
+                    <span class="em-c-btn__text">Print</span>
+                </button>
+                <!-- end em-c-btn -->
+
+
+
+                <!-- <a href="">
+                <button class="em-c-btn ">
+                    <span class="em-c-btn__text">Back</span>
+                </button>
+                
+                </a> -->
+
+            </div>
+
+</main>
